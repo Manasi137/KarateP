@@ -12,12 +12,6 @@ Feature:  Testing Restful Booker API
       "password": "password123"
     }
     """
-    When method POST
-    Then status 200
-    * print response
-    * def jsonResponse = response
-    * def name = jsonResponse.data.token
-    * print name
 
   Scenario: GET Booking IDs Request
     Given path '/booking/{bookingId}'
